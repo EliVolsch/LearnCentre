@@ -1,0 +1,9 @@
+#! source/bin/activae
+
+mkdocs
+mkdocs-with-pdf
+mkdocs-pdf-export-plugin
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-video
+mdx_gh_links
