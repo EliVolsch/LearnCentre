@@ -1,7 +1,7 @@
-###### Intro
+
 # Figma for Newbies <!-- Newbies make sriketrough texst here -->
 
-![MainLogo](img/MainLogo.png)
+![MainLogo](img/Group%201figma2.png)
 
 <!-- cant use the image or the name as it has been done already -->
 
@@ -36,7 +36,7 @@ Its versatility allows it to be adapted to many applications like creating desig
 Figma is a powerfull FREE design software wich allows user to create and share design ideas easily. With built in functionalites clients can easily view and comment designs right in the design file itself. Figma also provides support for developers creating html code snippets for features making implementing the design much quicker.
 
 ### How to get started 
-To get sdtarted got to [figma.com](www.figma.com) and register a user profile. It's free and will allow you to create and save your work.
+To get started follow the easy step [here](./getting-up.md)
 
 ### Key Consepts you'll learn
 Some key conseps youll learn from this book include the following:

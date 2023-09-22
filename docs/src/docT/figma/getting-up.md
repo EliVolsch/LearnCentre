@@ -1,4 +1,4 @@
-###### Getting Started
+
 # Create a Figma Account
 
 Although we can use figma we will need to register an account to be able to save the work we do. Dont worry creating an new figma account if **Free**. 

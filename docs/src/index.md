@@ -1,6 +1,6 @@
 # **Welcome to Learning-Cetre**
 
-![img](./img/learning-centre.png)
+![Name](./img/Learning%20-%20Centrename.png) ![img](./img/learning-centre.png)
 
 ### Overview
 In our socitiey the is a general lack of good `free` and `opensource` educational materiarls to assist indeviduals who would like to learn a new skill or expand their undertanding of skillsets. The `Learning-Centre` project is conseptualised to fill this gap in the community. Our goal is to provide acurate and insgithful educational materials for to assist user in learning new skills.
