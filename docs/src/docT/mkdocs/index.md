@@ -99,9 +99,11 @@ Select `trust the authors` from wihin vs code.
 
 7. For simplicity's sake well continue working within the vs code terminal. Open the terminal by selecting `Terminal >> New Terminal` from the top pane. Notice the terminal inside vs code has automatically activated the virtual environment since we can see `(venv) (base)`.
 
+> **Note:** *mkdocs support many different themes. For illustrative purposes we'll use the mkdocs materials theme. You can read more about how themes work and using them in your project [here](./mkdocs_themes.md)*
+
 8. Lets install mkdocs by running the following code:
 
-```pip install mkdocs```
+```pip install mkdocs-material```
 
 9. Once mkdocs has completed its run we can create a new project
 
@@ -109,12 +111,162 @@ Select `trust the authors` from wihin vs code.
 
 this creates a new folder inside of the directory named `{folder}` and file named `{file}`
 
-10. Lets run this to see what it looks like befor econtinueing.
+10. Lets run this to see what it looks like before continueing.
 
 ```mkdocs serve```
 
 inside the terminal a message should appear stating `INFO - [14:44:33] Browser connected: http://127.0.0.1:8000/`. This means that you are now hosting the document site on your local machine and can view it like it would be displayed on the web. Hold `ctrl` and click on the link `http;//127.0.0.1:8000` to open your page in the browser.
 
-Step 3: Sprucing up the platform
+#### Step 3: Sprucing up the platform
 
-When the browser opens you'll see the deafult mkdocs project page. In many cases this will do but we would like something that looks professional and appealing. feel free to play around on the deafult page before continueing with this tutorial.
+When the browser opens you'll see the deafult mkdocs project page. In many cases this will do but we would like something that looks professional and appealing. Play around on the deafult page before continueing with step 3.
+
+[Deafult_page]()
+
+Mkdocs supports other themes, which dictates how the page looks and react. You can view all the availible themes on the mkdocs [themes](./mkdocs_themes.md) page. Some themes are created for different applications or purposes. You may want to write a blog or have the documentation read like a book. You should find a theme to suit your needs. Alternativley you can also create your own theme and submit it to mkdocs to be listed here.
+
+[mkdocs_themes_page]()
+
+All of the themes are "modular", which means it has a certain level of customisation you can apply to it. For our application well look at the `materials` theme, and customise it a bit to better suite our needs. You can view the [mkdocs-materials]() documentation to get a better sence on how to use it.
+
+For our project we will use the `materials`theme. Currently our project still uses the deafult mkdocs theme, so let change that.
+
+1. In `vscode` locate and open `mkdocs.yml`. This file is the configuration file for our documentation site and contains all the nesecerry information to change the the look and navigation of the documents page. Your file might be empty at this stage meaning all the configurations are set to deafult. Mkdocs wil automatically load defult values if no alternative value is specified in this file, so no need for long and confusing files.
+
+[mkdocs.yml]()
+
+2. Lets add the following to the document to apply the `materials` theme. 
+
+```
+theme:
+    name: material
+```
+for a complete list of all possible configuration codes and their corresponding effects you can view the [mkdocs materials setup](https://squidfunk.github.io/mkdocs-material/setup/) page.
+
+3. Now save your work and view the changes. 
+
+> **Note:** *This might cause the local instance to "crash". Dont worry as this will not harm your computer in any way. If this happens you can run `mkdocs serve` again to lauch the local instance.*
+
+[mkdocs_material_first_view]()
+
+4. Now our new theme has been applied. We can make some additional changes to the mkdocs.yml to add some more functionality and change some looks. Lets change the file contents to this:
+
+```
+site_name: mkdocsTutorial
+site_url: "https://github.com/EliVolsch/{link here}"
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+```
+
+Explanation:
+```
+features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+```
+Here we are making some djustements to the styling and making improving some of the features. A more detailed list can be found [here]()
+
+```
+Language: en
+```
+making sure the language is set to english
+
+```
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+```
+
+changing the deafult colors of the platform, and icluding a toggle button to switch between ligh and dark modes.
+
+5. Now save your document and have a look at what has changed.
+
+![mkdocs_changes]()
+
+#### Add aditional pages
+We currently only have one page in our project. Although we can put all the information about our project into this page, we also have the ablilty to creae more pages, and sections to store those pages in. Lets add a new page to our project.
+
+1. From `vscode` using the file explorer we can navigate to the docs folder and create a new file using the `+` icon. Call it whatever you like but make sure to add the extension `.md` at the end and press enter. 
+
+![markdow_add_icon]() ![markdown_file_add_name]()
+
+Aditionally you can also create new files from the terminal if `cd` to the correct folder. Simply run the following commands:
+
+```
+cd docs/
+touch page2.md
+```
+![terminal_command_cd]() ![terminal_command_touch]()
+
+2. once a new file has been created you can open it in `vscode`. This gives us a blank markdown page, which we can add content to. If you are not to fammiliar with markdown syntax you can read more [here](). For simplicity i will just include a heading called page 2.
+
+```# Page 2```
+
+3. Now save the file. You'll notice some movement in the terminal. This is mkdocs automatically rebuilding the document since it has detected a change in the documentation. Now go an view the documentation in your browser. If you have already closed the browser just hold `ctrl` and click on the link in the terminal `http;//127.0.0.1:8000` to reopen the documentation in your browser.
+
+You'll see that the navigational pane has changed and there is now a `Page 2` tab availible. 
+
+![nav_pane_change]()
+
+#### Navigation
+
+What do we do if we want to add many pages to our documentation. If each page adds another page in the navigation then we will quickly run out of space for new pages. We can create a navigation pane to fix this problem. Two step are needed to create a proper navigation pane.
+
+![too_many_files](no nav in mkdocs)
+
+**First step:** We need to create a folder (or many) and move the markdown files into those folders.
+**Second step:** We need to devine the navigational tree structure in the `mkdocs.yml` file so it knows which files to link. 
+
+#### Why create folders
+this is to orgenise pages according to the relevant sections
+
+#### Stting-up the nav
+you can copy this if you like or create your own
+
+#### Explanaision of how it works
+
+#### Styling limits:
+Many other things can be specified in the config document and I strongly advise anyone to take some time to read through the documentation provided by mkdocs. The documentation provides indepth explanations of what features are affected and how things might change as well as displying the differnces through the use of examples. 
+
+The documentation of mk docs can be accessed [here]()
