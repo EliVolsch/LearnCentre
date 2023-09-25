@@ -261,7 +261,7 @@ What do we do if we want to add many pages to our documentation. If each page ad
 #### Why create folders
 this is to orgenise pages according to the relevant sections
 
-#### Stting-up the nav
+#### Setting-up the nav
 you can copy this if you like or create your own
 
 #### Explanaision of how it works
