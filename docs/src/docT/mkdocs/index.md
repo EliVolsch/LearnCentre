@@ -262,7 +262,48 @@ What do we do if we want to add many pages to our documentation. If each page ad
 this is to orgenise pages according to the relevant sections
 
 #### Setting-up the nav
-you can copy this if you like or create your own
+We can change the layout of the nav by simply addign a few lines of code. This will make out interface look mauch better and make finding things you want to look for much easier. 
+
+- #### How the it works
+  By using a `nav` attribute in the `mkdocs.yml` config we can change the layout of the navigational pane and navigational toolbar. This helps a great deal id you have many markdown files you want to display, allowing us to sort the files into more manageable setions or group them together. 
+
+  Inoredr to change our nav-bar we first need to specify that we want to create a custom nav. we can do this simply by adding the following to `mkdocs.yml`:
+
+  ```nav:```
+
+  ![mkdocs.yml_nav_added]()
+
+  Once this is done we need to speficy the folder tree of the nav.
+
+- #### Folder tree
+The folder tree allows us to specify the exsact route you would want the documnets to be displayed in. Think of this like creating a menu wher you need to navigate to one directory and then to the next to see the content you want to view. THis all sound more complicated than it is. 
+
+Inorder to set this up we need to understand how th mkdocs folder tree works
+```
+dir:
+    |__ Menu 1:
+    |     |__ Sub Menu 1:
+    |           |__ File 1
+    |           |__ File 2
+    |     |__ Sub Menu 2:
+    |           |__ File 1
+    |           |__ File 2
+    |            
+    |__ Menu 2:
+          |__ Sub Menu 1:
+                |__ File 1
+                |__ File 2
+                |__ File 3
+```
+
+Mkdocs supports the following folder trees
+
+To add a `nav` we should edit the `mkdocs.yml` file, and add the following to it:
+
+```
+nav:
+        - Home: index.md
+```
 
 #### Explanaision of how it works
 
