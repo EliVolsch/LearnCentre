@@ -1,4 +1,7 @@
-###### [Home](../index.md) | [Back](../fundamentals/index.md)
+###### [Home](../index.md){: style="width:50%"} | [Back](../fundamentals/index.md){: style="width:50%"}
+
+
+![type:video](https://youtu.be/gnscqweM_NU?si=2mmQOQpot1qfPU3-)
 
 # **Basic Shape Tools**:
 Basic shapes are the building blocks of every infetfeace. Shapes like circles or rectangles make can make up everything form avatars and to buttons. Within figma the shape tools are a collection of six tools that create those basic shapes. The deafult tool is the shape tool in the toolbar is the rectagle tool. By clicking the dropdown arrow next to it we can find the rest of the shape tools. 
