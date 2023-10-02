@@ -1,13 +1,8 @@
 site_name: LearnCentre
 site_description: "Tutorial documentation of selected open scource programs"
 site_author: "Eli Volschenk and contributors"
-<<<<<<< HEAD
-docs_dir: ./docs/src
-site_dir: ./docs/site
-=======
 docs_dir: ./src
 site_dir: ./site
->>>>>>> 0c0cdb4 (try more)
 repo_name: "LearnCentre"
 repo_url: "https://github.com/EliVolsch/LearnCentre"
 edit_uri: "https://github.com/EliVolsch/LearnCentre/blob/main/docs/"
