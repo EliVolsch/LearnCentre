@@ -7,3 +7,4 @@ mkdocs-material
 mkdocs-material-extensions
 mkdocs-video
 mdx_gh_links
+attr

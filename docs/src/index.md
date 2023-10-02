@@ -15,3 +15,6 @@ We aim to provide `FREE-4-EVER` tutorials and materials which are `clear`, `acur
 Please review our code of conduct and terms of use to esure you remain withing the bounds laid out for the use and contribution towards this product.
 
 ##### Disclaimer here:
+All materials found on this platform are for demontrative purposes only. we cannot be held liable for any los or damage caused whatsoever.
+
+all intelectual property is and will always remain the property of the creator. if you wish to use any of the materials fount on this site please contact the creator and requst permission to do so. All of the materials found on this platform ae to remain free and cannot be sold or used in amy paid products of any kind.

@@ -98,38 +98,25 @@ plugins:
 
 nav:
   - Home:
-      - /index.md # short intro on project here
-  - Learning Materials:
-      - /explore.md # this will be menu file with all courses
-      - "":
-        - "": /figma/index.md # (use "": to load pages without displaying them)
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-          - "": /figma/fundametals/
-      - "": /mkdocs/index.md
-  - Contribute:
-      - index.md #Why should people contribute to this platform? Link contributors gh handles
-      - How to contribute: contribute.md
-      - Contribution Guidelines: guidelines.md
+      - index.md
+  - Explore Tutorials:
+      - "": explore.md
+      - Video Tutorials:
+          - videoT/index.md
+          - Figma:
+              - videoT/figma/index.md
+      - Read Through Tutorials:
+          - docT/index.md
+          - Figma:
+              - Intro: docT/figma/index.md
+              - Getting Started: docT/figma/getting-up.md
+              - Fundamentals:
+                  - docT/figma/fundamentals/index.md
+                  - Shape Tools: docT/figma/fundamentals/shapeTools.md
+          - Mkdocs:
+              - docT/mkdocs/index.md
   - About:
-      - /index.md
+      - about/index.md
+      - Code of conduct: about/codeofconduct.md
+      - Contributing to this site: about/contributing.md
       - Terms of use: about/terms.md
-      - License: about/license.md
-  - Help: help.md
