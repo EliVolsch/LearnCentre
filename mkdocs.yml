@@ -95,6 +95,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
 plugins:
   - mkdocs-video
+  - search
 
 nav:
   - Home:
