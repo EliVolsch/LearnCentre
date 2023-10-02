@@ -1,4 +1,4 @@
-site_name: LearnCentre
+site_name: Resource Centre
 site_description: "Tutorial documentation of selected open scource programs"
 site_author: "Eli Volschenk and contributors"
 docs_dir: ./docs/src
