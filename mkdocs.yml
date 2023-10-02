@@ -102,7 +102,8 @@ nav:
   - Learning Materials:
       - /explore.md # this will be menu file with all courses
       - "":
-        - "": /figma/index.md # (use "": to load pages without displaying them)
+        - "": 
+          - /figma/index.md # (use "": to load pages without displaying them)
           - "": /figma/fundametals/
           - "": /figma/fundametals/
           - "": /figma/fundametals/
